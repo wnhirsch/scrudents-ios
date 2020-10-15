@@ -1,2 +1,3 @@
-# scrudents-ios
-A Simple iOS App to do CRUD operations on Students.
+# sCRUDents - iOS
+
+sCRUDents is a Simple iOS App to do CRUD operations on Students.

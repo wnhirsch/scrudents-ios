@@ -1,0 +1,6 @@
+framework module Pods_Scrudents {
+  umbrella header "Pods-Scrudents-umbrella.h"
+
+  export *
+  module * { export * }
+}

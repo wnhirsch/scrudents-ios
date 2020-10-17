@@ -17,7 +17,7 @@
                BlueprintIdentifier = "2244B0722537F27B008CE5F1"
                BuildableName = "Scrudents.app"
                BlueprintName = "Scrudents"
-               ReferencedContainer = "container:scrudents.xcodeproj">
+               ReferencedContainer = "container:Scrudents.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "2244B0882537F27D008CE5F1"
                BuildableName = "ScrudentsTests.xctest"
                BlueprintName = "ScrudentsTests"
-               ReferencedContainer = "container:scrudents.xcodeproj">
+               ReferencedContainer = "container:Scrudents.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "2244B0932537F27D008CE5F1"
                BuildableName = "ScrudentsUITests.xctest"
                BlueprintName = "ScrudentsUITests"
-               ReferencedContainer = "container:scrudents.xcodeproj">
+               ReferencedContainer = "container:Scrudents.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -67,7 +67,7 @@
             BlueprintIdentifier = "2244B0722537F27B008CE5F1"
             BuildableName = "Scrudents.app"
             BlueprintName = "Scrudents"
-            ReferencedContainer = "container:scrudents.xcodeproj">
+            ReferencedContainer = "container:Scrudents.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -84,7 +84,7 @@
             BlueprintIdentifier = "2244B0722537F27B008CE5F1"
             BuildableName = "Scrudents.app"
             BlueprintName = "Scrudents"
-            ReferencedContainer = "container:scrudents.xcodeproj">
+            ReferencedContainer = "container:Scrudents.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

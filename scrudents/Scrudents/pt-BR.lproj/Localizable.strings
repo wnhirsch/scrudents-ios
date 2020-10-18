@@ -1,0 +1,57 @@
+/* 
+  Localizable.strings
+  Scrudents
+
+  Created by Wellington Nascente Hirsch on 17/10/20.
+  
+*/
+
+
+// - MARK: General
+"next" = "Próximo";
+"okay" = "Entendi";
+
+
+// - MARK: Patterns
+"day.month" = "%02d/%02d";
+"day.month.year" = "%02d/%02d/%d";
+
+
+// MARK: - Errors
+"field.error" = "Campo Inválido";
+"field.error.msg" = "O campo %@ não possui um valor válido.";
+
+
+// MARK: - Address
+"address" = "Endereço";
+"address.cep" = "CEP";
+"address.street" = "Rua";
+"address.number" = "Número";
+"address.addon" = "Complemento";
+"address.district" = "Bairro";
+"address.city" = "Cidade";
+"address.state" = "Estado";
+
+
+// MARK: - Mother
+"mother" = "Mão";
+"mother.name" = "Nome";
+"mother.cpf" = "CPF";
+"mother.payday" = "Dia do Pagamento";
+
+
+// MARK: - Student
+"student" = "Estudante";
+"student.name" = "Nome";
+"student.birthdate" = "Data de Nascimento";
+"student.grade" = "Série";
+// Grade
+"grade.first" = "1° Série";
+"grade.second" = "2° Série";
+"grade.third" = "3° Série";
+"grade.fourth" = "4° Série";
+"grade.fifth" = "5° Série";
+"grade.sixth" = "6° Série";
+"grade.seventh" = "7° Série";
+"grade.eighth" = "8° Série";
+"grade.ninth" = "9° Série";

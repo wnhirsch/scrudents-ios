@@ -1,0 +1,90 @@
+
+/* Class = "UILabel"; text = "Pay Day"; ObjectID = "1F0-Qu-oBw"; */
+"1F0-Qu-oBw.text" = "Data do Pagamento";
+
+/* Class = "UITextField"; placeholder = "1234"; ObjectID = "4pG-De-1It"; */
+"4pG-De-1It.placeholder" = "1234";
+
+/* Class = "UITextField"; placeholder = "Av. ABC"; ObjectID = "718-Lp-szo"; */
+"718-Lp-szo.placeholder" = "Av. Paulista";
+
+/* Class = "UILabel"; text = "State"; ObjectID = "7KD-ED-mfW"; */
+"7KD-ED-mfW.text" = "Estado";
+
+/* Class = "UITextField"; placeholder = "111.111.111-11"; ObjectID = "7tX-r6-O2N"; */
+"7tX-r6-O2N.placeholder" = "111.111.111-11";
+
+/* Class = "UILabel"; text = "Number"; ObjectID = "9Nk-H2-Ne0"; */
+"9Nk-H2-Ne0.text" = "Número";
+
+/* Class = "UITextField"; placeholder = "FL"; ObjectID = "Eiu-i9-UfB"; */
+"Eiu-i9-UfB.placeholder" = "SP";
+
+/* Class = "UITextField"; placeholder = "1° Grade"; ObjectID = "EnG-Wa-k9e"; */
+"EnG-Wa-k9e.placeholder" = "1° Série";
+
+/* Class = "UILabel"; text = "Street"; ObjectID = "FeK-kh-T1e"; */
+"FeK-kh-T1e.text" = "Rua";
+
+/* Class = "UITextField"; placeholder = "Apto. 456"; ObjectID = "G4V-CW-r7O"; */
+"G4V-CW-r7O.placeholder" = "Apto. 456";
+
+/* Class = "UITextField"; placeholder = "João Silveira"; ObjectID = "Htb-DK-xPQ"; */
+"Htb-DK-xPQ.placeholder" = "João Silveira";
+
+/* Class = "UILabel"; text = "Birthdate"; ObjectID = "I00-T0-Dql"; */
+"I00-T0-Dql.text" = "Data de Nascimento";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "JQD-PM-Dnb"; */
+"JQD-PM-Dnb.text" = "Endereço";
+
+/* Class = "UILabel"; text = "CPF"; ObjectID = "MFN-c4-85g"; */
+"MFN-c4-85g.text" = "CPF";
+
+/* Class = "UILabel"; text = "Postal Code"; ObjectID = "TQF-3Q-cWS"; */
+"TQF-3Q-cWS.text" = "CEP";
+
+/* Class = "UILabel"; text = "Add-on"; ObjectID = "Zet-gA-Ip2"; */
+"Zet-gA-Ip2.text" = "Complemento";
+
+/* Class = "UILabel"; text = "City"; ObjectID = "Zgw-M1-sBV"; */
+"Zgw-M1-sBV.text" = "Cidade";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "b6w-8i-fux"; */
+"b6w-8i-fux.text" = "Nome";
+
+/* Class = "UINavigationItem"; title = "Create Student"; ObjectID = "cPp-NA-Mgz"; */
+"cPp-NA-Mgz.title" = "Criar Estudante";
+
+/* Class = "UITextField"; placeholder = "Jacksonville"; ObjectID = "e9D-26-22E"; */
+"e9D-26-22E.placeholder" = "São Paulo";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "eok-w6-Utk"; */
+"eok-w6-Utk.text" = "Nome";
+
+/* Class = "UITextField"; placeholder = "01/01/2000"; ObjectID = "hDs-99-yAi"; */
+"hDs-99-yAi.placeholder" = "01/01/2000";
+
+/* Class = "UITextField"; placeholder = "Arlington"; ObjectID = "lND-4t-4Rc"; */
+"lND-4t-4Rc.placeholder" = "Bela Vista";
+
+/* Class = "UILabel"; text = "District"; ObjectID = "mtU-Y1-fj0"; */
+"mtU-Y1-fj0.text" = "Bairro";
+
+/* Class = "UILabel"; text = "Grade"; ObjectID = "qHN-cm-GWZ"; */
+"qHN-cm-GWZ.text" = "Série";
+
+/* Class = "UITextField"; placeholder = "01/01/2000"; ObjectID = "rLt-oG-gWc"; */
+"rLt-oG-gWc.placeholder" = "01/01/2000";
+
+/* Class = "UILabel"; text = "Student Information"; ObjectID = "uDh-3I-dwA"; */
+"uDh-3I-dwA.text" = "Dados do Estudante";
+
+/* Class = "UITextField"; placeholder = "12345-678"; ObjectID = "uem-vA-OxX"; */
+"uem-vA-OxX.placeholder" = "12345-678";
+
+/* Class = "UITextField"; placeholder = "Maria Silveira"; ObjectID = "xde-9d-Vn0"; */
+"xde-9d-Vn0.placeholder" = "Maria Silveira";
+
+/* Class = "UILabel"; text = "Mother Information"; ObjectID = "ydB-Gy-fv3"; */
+"ydB-Gy-fv3.text" = "Dados da Mãe";

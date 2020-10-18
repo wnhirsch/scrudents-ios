@@ -7,7 +7,6 @@
 //
 //  Created by Wellington Nascente Hirsch on 16/10/20.
 //
-//
 
 import Foundation
 import RealmSwift
@@ -26,6 +25,13 @@ class Mother: Object {
         self.name = mother.name
         self.cpf = mother.cpf
         self.payday = mother.payday
+    }
+    
+    convenience init(name: String, cpf: String, payday: Date) {
+        self.init()
+        self.name = name
+        self.cpf = cpf
+        self.payday = payday
     }
     
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gle-k2-Mks">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -14,34 +14,34 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Scrudents" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9mW-hJ-Hts">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="P5h-2r-cpa">
-                                <rect key="frame" x="16" y="60" width="343" height="34"/>
+                                <rect key="frame" x="16" y="104" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="search" smartDashesType="no" smartQuotesType="no" textContentType="name"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SvQ-3n-RKm">
-                                <rect key="frame" x="0.0" y="110" width="375" height="557"/>
+                                <rect key="frame" x="0.0" y="154" width="414" height="708"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="43N-v6-VYD" detailTextLabel="Fnw-NO-Dzi" style="IBUITableViewCellStyleSubtitle" id="u8B-K1-NEf">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="55.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Main:StudentCell" textLabel="43N-v6-VYD" detailTextLabel="Fnw-NO-Dzi" style="IBUITableViewCellStyleSubtitle" id="u8B-K1-NEf" customClass="StudentCell" customModule="Scrudents" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u8B-K1-NEf" id="PYd-19-gjt">
-                                            <rect key="frame" x="0.0" y="0.0" width="348" height="55.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="43N-v6-VYD">
-                                                    <rect key="frame" x="16" y="10" width="33" height="20.5"/>
+                                                    <rect key="frame" x="20" y="10" width="33" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fnw-NO-Dzi">
-                                                    <rect key="frame" x="16" y="31.5" width="33" height="14.5"/>
+                                                    <rect key="frame" x="20" y="31.5" width="33" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -49,8 +49,16 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="studentInfo" destination="Fnw-NO-Dzi" id="XAy-dF-mPo"/>
+                                            <outlet property="studentName" destination="43N-v6-VYD" id="PzT-eF-u0R"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="J4A-pE-boc"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="zHF-Xl-Mky"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QIS-6K-wRb"/>
@@ -68,8 +76,15 @@
                     <navigationItem key="navigationItem" title="Students" id="64r-qU-Ccs">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="JLq-jH-WMy">
                             <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="newStudent:" destination="BYZ-38-t0r" id="dU1-fF-JK4"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mainTableView" destination="SvQ-3n-RKm" id="cQL-pp-0Jm"/>
+                        <outlet property="newStudentButton" destination="JLq-jH-WMy" id="HNq-63-Z1L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,7 +95,7 @@
             <objects>
                 <navigationController id="Gle-k2-Mks" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oLe-7r-7pT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

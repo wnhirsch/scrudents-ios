@@ -25,9 +25,11 @@ class Constants {
         static let maxStateChar: Int = 100
         static let maxStreetChar: Int = 120
         
-        static let CEPFormat: String = "^\\d{5}-\\d{3}$"
+        static let CEPRegex: String = "^\\d{5}-\\d{3}$"
+        static let CEPPattern: String = "#####-###"
         static let CEPDigits: Int = 8
-        static let CPFFormat: String = "^\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}$"
+        static let CPFRegex: String = "^\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}$"
+        static let CPFPattern: String = "###.###.###-##"
         static let CPFDigits: Int = 11
     }
     

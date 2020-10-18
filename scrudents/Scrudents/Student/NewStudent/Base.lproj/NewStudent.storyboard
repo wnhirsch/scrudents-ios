@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OmT-KV-dXK">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="oxo-Kh-P0U">
+            <objects>
+                <navigationController id="OmT-KV-dXK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zBS-3K-d0r">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zCf-wB-7Lw" kind="relationship" relationship="rootViewController" id="acX-a3-3UB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wYi-q6-HeP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1072" y="56"/>
+        </scene>
+        <!--Create Student-->
+        <scene sceneID="dHB-na-Nj7">
+            <objects>
+                <viewController storyboardIdentifier="NewStudentViewController" id="zCf-wB-7Lw" customClass="NewStudentViewController" customModule="Scrudents" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VEE-1x-GRN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOy-uZ-013">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Lww-BF-2qC">
+                                        <rect key="frame" x="16" y="16" width="382" height="819.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDh-3I-dwA">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="XgC-c0-Kwe" userLabel="Student Stack View">
+                                                <rect key="frame" x="0.0" y="36.5" width="382" height="182"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="3N7-SD-Q8Y" userLabel="Student Name Stack View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6w-8i-fux" userLabel="Student Name Label">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Jhon Carter" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Htb-DK-xPQ" userLabel="Student Name Text Field">
+                                                                <rect key="frame" x="0.0" y="19" width="382" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" smartDashesType="no" textContentType="name"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="zCf-wB-7Lw" id="9kK-Tq-Z2S"/>
+                                                                </connections>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="y56-sf-ON6"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="dZY-sG-Abb" userLabel="Student Birthdate Stack View">
+                                                        <rect key="frame" x="0.0" y="66" width="382" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthdate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I00-T0-Dql" userLabel="Student Birthdate Label">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="01/01/2000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rLt-oG-gWc" userLabel="Student Birthdate Text Field">
+                                                                <rect key="frame" x="0.0" y="19" width="382" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" smartDashesType="no"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="zCf-wB-7Lw" id="ZtU-X3-IHX"/>
+                                                                </connections>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="tUw-0D-1et"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="XOd-Fu-x1k" userLabel="Student Grade Stack View">
+                                                        <rect key="frame" x="0.0" y="132" width="382" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHN-cm-GWZ" userLabel="Student Grade Label">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1st Grade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EnG-Wa-k9e" userLabel="Student Grade Text Field">
+                                                                <rect key="frame" x="0.0" y="19" width="382" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" smartDashesType="no"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="zCf-wB-7Lw" id="Qtf-q3-6cU"/>
+                                                                </connections>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="gfK-uX-oNc"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQD-PM-Dnb">
+                                                <rect key="frame" x="0.0" y="234.5" width="382" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dF2-cx-z3L" userLabel="Address Stack View">
+                                                <rect key="frame" x="0.0" y="271" width="382" height="314"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="eAT-CQ-rYG" userLabel="Address CEP Stack View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Postal Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQF-3Q-cWS" userLabel="Address CEP Label">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="12345-678" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uem-vA-OxX" userLabel="Address CEP Text Field">
+                                                                <rect key="frame" x="0.0" y="19" width="382" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" smartDashesType="no" textContentType="postal-code"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="zCf-wB-7Lw" id="5QM-Tc-Ra4"/>
+                                                                </connections>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="qel-SO-Tay"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="92W-FW-BkJ" userLabel="Address StreetNumber Stack View">
+                                                        <rect key="frame" x="0.0" y="66" width="382" height="50"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="7u3-35-aOu" userLabel="Address Street Stack View">
+                                                                <rect key="frame" x="0.0" y="0.0" width="297.5" height="50"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeK-kh-T1e" userLabel="Address Street Label">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="297.5" height="17"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Av. Paulista" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="718-Lp-szo" userLabel="Address Street Text Field">
+                                                                        <rect key="frame" x="0.0" y="19" width="297.5" height="31"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" textContentType="address-line1"/>
+                                                                        <connections>
+                                                                            <outlet property="delegate" destination="zCf-wB-7Lw" id="mPT-E3-vgu"/>
+                                                                        </connections>
+                                                                    </textField>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="ZRM-WJ-anQ"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="NKI-TA-Fns" userLabel="Address Number Stack View">
+                                                                <rect key="frame" x="305.5" y="0.0" width="76.5" height="50"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Nk-H2-Ne0" userLabel="Address Number Label">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="76.5" height="17"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1234" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4pG-De-1It" userLabel="Address Number Text Field">
+                                                                        <rect key="frame" x="0.0" y="19" width="76.5" height="31"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" textContentType="address-line1"/>
+                                                                        <connections>
+                                                                            <outlet property="delegate" destination="zCf-wB-7Lw" id="mvD-U1-K2u"/>
+                                                                        </connections>
+                                                                    </textField>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="CLB-94-ED0"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="NKI-TA-Fns" firstAttribute="width" secondItem="92W-FW-BkJ" secondAttribute="width" multiplier="0.2" id="RR4-pa-96h"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="fmQ-Zz-Og3" userLabel="Address Addon Stack View">
+                                                        <rect key="frame" x="0.0" y="132" width="382" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add-on" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zet-gA-Ip2" userLabel="Address Addon Label">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apto. 456" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G4V-CW-r7O" userLabel="Address Addon Text Field">
+                                                                <rect key="frame" x="0.0" y="19" width="382" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="address-line2"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="zCf-wB-7Lw" id="ane-Zt-AFQ"/>
+                                                                </connections>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="aNt-HG-J39"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="dFi-Hn-kXz" userLabel="Address District Stack View">
+                                                        <rect key="frame" x="0.0" y="198" width="382" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="District" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtU-Y1-fj0" userLabel="Address District Label">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bela Vista" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lND-4t-4Rc" userLabel="Address District Text Field">
+                                                                <rect key="frame" x="0.0" y="19" width="382" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" smartDashesType="no" textContentType="address-level3"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="zCf-wB-7Lw" id="zPI-Be-RKa"/>
+                                                                </connections>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="t6X-Hv-bfY"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4nf-8a-wzh" userLabel="Address CityState Stack View">
+                                                        <rect key="frame" x="0.0" y="264" width="382" height="50"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="zhl-2z-Vsn" userLabel="Address City Stack View">
+                                                                <rect key="frame" x="0.0" y="0.0" width="297.5" height="50"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zgw-M1-sBV" userLabel="Address City Label">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="297.5" height="17"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="São Paulo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e9D-26-22E" userLabel="Address City Text Field">
+                                                                        <rect key="frame" x="0.0" y="19" width="297.5" height="31"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" smartDashesType="no" textContentType="address-level2"/>
+                                                                        <connections>
+                                                                            <outlet property="delegate" destination="zCf-wB-7Lw" id="ia1-iS-zoq"/>
+                                                                        </connections>
+                                                                    </textField>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="NSc-Y2-q5c"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Q91-zu-sV4" userLabel="Address State Stack View">
+                                                                <rect key="frame" x="305.5" y="0.0" width="76.5" height="50"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7KD-ED-mfW" userLabel="Address State Label">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="76.5" height="17"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="SP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eiu-i9-UfB" userLabel="Address State Text Field">
+                                                                        <rect key="frame" x="0.0" y="19" width="76.5" height="31"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="next" smartDashesType="no" textContentType="address-level1"/>
+                                                                        <connections>
+                                                                            <outlet property="delegate" destination="zCf-wB-7Lw" id="Cav-oi-jM6"/>
+                                                                        </connections>
+                                                                    </textField>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="Yv6-El-IcL"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="Q91-zu-sV4" firstAttribute="width" secondItem="4nf-8a-wzh" secondAttribute="width" multiplier="0.2" id="MSx-WD-2F9"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mother Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydB-Gy-fv3">
+                                                <rect key="frame" x="0.0" y="601" width="382" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nYG-7h-jtO" userLabel="Mother Stack View">
+                                                <rect key="frame" x="0.0" y="637.5" width="382" height="182"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="rRb-ho-RF4" userLabel="Mother Name Stack View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eok-w6-Utk" userLabel="Mother Name Label">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Marry Carter" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xde-9d-Vn0" userLabel="Mother Name Text Field">
+                                                                <rect key="frame" x="0.0" y="19" width="382" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" smartDashesType="no" textContentType="name"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="zCf-wB-7Lw" id="cf9-Sd-2Pk"/>
+                                                                </connections>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="Dn0-6t-sRY"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="yKl-lp-58b" userLabel="Mother CPF Stack View">
+                                                        <rect key="frame" x="0.0" y="66" width="382" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFN-c4-85g" userLabel="Mother CPF Label">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="111.111.111-11" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7tX-r6-O2N" userLabel="Mother CPF Text Field">
+                                                                <rect key="frame" x="0.0" y="19" width="382" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad" returnKeyType="next" smartDashesType="no"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="zCf-wB-7Lw" id="BT9-98-yxy"/>
+                                                                </connections>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="b2u-xL-vQB"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="wyJ-l7-ANE" userLabel="Mother Payday Stack View">
+                                                        <rect key="frame" x="0.0" y="132" width="382" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1F0-Qu-oBw" userLabel="Mother Payday Label">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="01/01/2000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hDs-99-yAi" userLabel="Mother Payday Text Field">
+                                                                <rect key="frame" x="0.0" y="19" width="382" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" smartDashesType="no"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="zCf-wB-7Lw" id="egg-p6-caw"/>
+                                                                </connections>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="gfP-qB-0PR"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Lww-BF-2qC" firstAttribute="leading" secondItem="AOy-uZ-013" secondAttribute="leading" constant="16" id="8X5-ij-WuP"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lww-BF-2qC" secondAttribute="trailing" id="TQ2-S2-8xC"/>
+                                    <constraint firstAttribute="bottom" secondItem="Lww-BF-2qC" secondAttribute="bottom" constant="16" id="hYD-fm-SdB"/>
+                                    <constraint firstItem="Lww-BF-2qC" firstAttribute="centerX" secondItem="AOy-uZ-013" secondAttribute="centerX" id="sva-Sc-Frg"/>
+                                    <constraint firstItem="Lww-BF-2qC" firstAttribute="top" secondItem="AOy-uZ-013" secondAttribute="top" constant="16" id="tBG-oO-BwP"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Lh-5v-FpK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AOy-uZ-013" firstAttribute="top" secondItem="2Lh-5v-FpK" secondAttribute="top" id="HMS-bY-Ays"/>
+                            <constraint firstItem="AOy-uZ-013" firstAttribute="height" secondItem="2Lh-5v-FpK" secondAttribute="height" id="YMh-ni-JLx"/>
+                            <constraint firstItem="AOy-uZ-013" firstAttribute="leading" secondItem="2Lh-5v-FpK" secondAttribute="leading" id="e1v-2X-M7D"/>
+                            <constraint firstItem="AOy-uZ-013" firstAttribute="trailing" secondItem="2Lh-5v-FpK" secondAttribute="trailing" id="kef-Dv-W4b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create Student" id="cPp-NA-Mgz">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="dHR-ZR-yV0">
+                            <connections>
+                                <action selector="cancel:" destination="zCf-wB-7Lw" id="wLO-0f-V4M"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="gK1-3Q-CIt">
+                            <connections>
+                                <action selector="save:" destination="zCf-wB-7Lw" id="eZq-1l-oM0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addressAddonField" destination="G4V-CW-r7O" id="dCS-Rn-gaS"/>
+                        <outlet property="addressCEPField" destination="uem-vA-OxX" id="qXJ-Zb-uK7"/>
+                        <outlet property="addressCityField" destination="e9D-26-22E" id="ZQe-dr-hUU"/>
+                        <outlet property="addressDistrictField" destination="lND-4t-4Rc" id="6qG-Wo-y1n"/>
+                        <outlet property="addressNumberField" destination="4pG-De-1It" id="I9x-gT-VUN"/>
+                        <outlet property="addressPaydayField" destination="hDs-99-yAi" id="iHY-HM-txK"/>
+                        <outlet property="addressStateField" destination="Eiu-i9-UfB" id="dN4-gR-70w"/>
+                        <outlet property="addressStreetField" destination="718-Lp-szo" id="RUa-Jg-BTZ"/>
+                        <outlet property="cancelButton" destination="dHR-ZR-yV0" id="mbM-bl-1qw"/>
+                        <outlet property="motherCPFField" destination="7tX-r6-O2N" id="igw-ha-V9O"/>
+                        <outlet property="motherNameField" destination="xde-9d-Vn0" id="h8o-tZ-lvN"/>
+                        <outlet property="saveButton" destination="gK1-3Q-CIt" id="UcN-W3-0YU"/>
+                        <outlet property="scrollView" destination="AOy-uZ-013" id="w6a-EF-D1s"/>
+                        <outlet property="studentBirthdateField" destination="rLt-oG-gWc" id="0D4-Sy-0A1"/>
+                        <outlet property="studentGradeField" destination="EnG-Wa-k9e" id="JII-dF-5S9"/>
+                        <outlet property="studentNameField" destination="Htb-DK-xPQ" id="L8K-nw-D1x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E1d-S6-ikq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-257.97101449275362" y="55.580357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

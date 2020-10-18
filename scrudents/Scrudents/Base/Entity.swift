@@ -2,24 +2,18 @@
 //  Entity.swift
 //  Scrudents
 //
-//  Entidade Básica com informações mínimas necessárias para
-//  a persistência de dados.
+// Protocolo para definir as propriedades básicas de todas
+// as entidades a serem persistidas.
 //
-//  Created by Wellington Nascente Hirsch on 16/10/20.
-//
+//  Created by Wellington Nascente Hirsch on 17/10/20.
 //
 
 import Foundation
-import RealmSwift
 
-class Entity: Object {
+protocol Entity {
     
-    @objc dynamic var id: String = UUID().uuidString
-    @objc dynamic var createdAt: Date = Date()
-    @objc dynamic var modifiedAt: Date = Date()
-    
-    override static func primaryKey() -> String? {
-        return "id"
-    }
-    
+    var id: String { get set }
+    var createdAt: Date { get set }
+    var modifiedAt: Date { get set }
+        
 }

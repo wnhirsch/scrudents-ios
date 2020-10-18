@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		124C6304C4EB01171AC35B15 /* Pods_ScrudentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D32E69AC5E06750CD6DC3B /* Pods_ScrudentsTests.framework */; };
+		220A777A253B9CC90082D765 /* NewStudentTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220A7779253B9CC90082D765 /* NewStudentTextFieldDelegate.swift */; };
+		220A777F253B9D180082D765 /* NewStudentLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220A777E253B9D180082D765 /* NewStudentLayoutHelper.swift */; };
+		220A778E253BC2A70082D765 /* NewStudent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220A7790253BC2A70082D765 /* NewStudent.storyboard */; };
+		220A779A253BC7D00082D765 /* NewStudentDatePickerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220A7799253BC7D00082D765 /* NewStudentDatePickerHelper.swift */; };
+		220A77A2253BE0640082D765 /* NewStudentPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220A77A1253BE0640082D765 /* NewStudentPickerViewDelegate.swift */; };
+		220A77A7253BE3AC0082D765 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220A77A6253BE3AC0082D765 /* Enums.swift */; };
+		223AF7E2253AAFC700C7714A /* EntityFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223AF7E1253AAFC700C7714A /* EntityFacade.swift */; };
+		223AF7EA253AB09C00C7714A /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223AF7E9253AB09C00C7714A /* Entity.swift */; };
+		223AF7F5253AB4AC00C7714A /* StudentFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223AF7F4253AB4AC00C7714A /* StudentFacade.swift */; };
+		223AF7FA253AB4BA00C7714A /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223AF7F9253AB4BA00C7714A /* StudentCell.swift */; };
+		223AF802253ABB6B00C7714A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223AF801253ABB6B00C7714A /* Extensions.swift */; };
+		223AF80B253ABC8A00C7714A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 223AF80D253ABC8A00C7714A /* Localizable.strings */; };
+		223AF817253AC46600C7714A /* NewStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223AF816253AC46600C7714A /* NewStudentViewController.swift */; };
 		2244B0772537F27B008CE5F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244B0762537F27B008CE5F1 /* AppDelegate.swift */; };
 		2244B07B2537F27B008CE5F1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244B07A2537F27B008CE5F1 /* MainViewController.swift */; };
 		2244B07E2537F27B008CE5F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2244B07C2537F27B008CE5F1 /* Main.storyboard */; };
@@ -17,7 +30,6 @@
 		2244B0992537F27D008CE5F1 /* ScrudentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244B0982537F27D008CE5F1 /* ScrudentsUITests.swift */; };
 		22BCF5CA253A3CA8003E2DC9 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCF5C9253A3CA8003E2DC9 /* Student.swift */; };
 		22BCF5CF253A42ED003E2DC9 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCF5CE253A42ED003E2DC9 /* Address.swift */; };
-		22BCF5D5253A434C003E2DC9 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCF5D4253A434C003E2DC9 /* Entity.swift */; };
 		22BCF5DD253A5C8D003E2DC9 /* Mother.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCF5DC253A5C8D003E2DC9 /* Mother.swift */; };
 		22BCF5E5253A5F29003E2DC9 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCF5E4253A5F29003E2DC9 /* Validations.swift */; };
 		22BCF5EB253A6580003E2DC9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCF5EA253A6580003E2DC9 /* Constants.swift */; };
@@ -45,8 +57,23 @@
 
 /* Begin PBXFileReference section */
 		0D259EB67B07EB408F9BA409 /* Pods-ScrudentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrudentsTests.debug.xcconfig"; path = "Target Support Files/Pods-ScrudentsTests/Pods-ScrudentsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		220A7779253B9CC90082D765 /* NewStudentTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStudentTextFieldDelegate.swift; sourceTree = "<group>"; };
+		220A777E253B9D180082D765 /* NewStudentLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStudentLayoutHelper.swift; sourceTree = "<group>"; };
+		220A778F253BC2A70082D765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NewStudent.storyboard; sourceTree = "<group>"; };
+		220A7795253BC2AD0082D765 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/NewStudent.strings"; sourceTree = "<group>"; };
+		220A7799253BC7D00082D765 /* NewStudentDatePickerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStudentDatePickerHelper.swift; sourceTree = "<group>"; };
+		220A77A1253BE0640082D765 /* NewStudentPickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStudentPickerViewDelegate.swift; sourceTree = "<group>"; };
+		220A77A6253BE3AC0082D765 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		222FF9A8253A2D07003C658C /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		222FF9A9253A2D07003C658C /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		223AF7E1253AAFC700C7714A /* EntityFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityFacade.swift; sourceTree = "<group>"; };
+		223AF7E9253AB09C00C7714A /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		223AF7F4253AB4AC00C7714A /* StudentFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentFacade.swift; sourceTree = "<group>"; };
+		223AF7F9253AB4BA00C7714A /* StudentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCell.swift; sourceTree = "<group>"; };
+		223AF801253ABB6B00C7714A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		223AF80C253ABC8A00C7714A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		223AF811253ABC8C00C7714A /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		223AF816253AC46600C7714A /* NewStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStudentViewController.swift; sourceTree = "<group>"; };
 		2244B0732537F27B008CE5F1 /* Scrudents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrudents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2244B0762537F27B008CE5F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2244B07A2537F27B008CE5F1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -60,13 +87,10 @@
 		2244B0942537F27D008CE5F1 /* ScrudentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrudentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2244B0982537F27D008CE5F1 /* ScrudentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrudentsUITests.swift; sourceTree = "<group>"; };
 		2244B09A2537F27D008CE5F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2244B0AF2537F2D8008CE5F1 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
-		2244B0B02537F2D8008CE5F1 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		2254AB0B2538D049007F4BDD /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../../Downloads/realm-swift-5.5.0/ios/swift-12.0/Realm.framework"; sourceTree = "<group>"; };
 		2254AB112538D052007F4BDD /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../../Downloads/realm-swift-5.5.0/ios/swift-12.0/RealmSwift.framework"; sourceTree = "<group>"; };
 		22BCF5C9253A3CA8003E2DC9 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		22BCF5CE253A42ED003E2DC9 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
-		22BCF5D4253A434C003E2DC9 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		22BCF5DC253A5C8D003E2DC9 /* Mother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mother.swift; sourceTree = "<group>"; };
 		22BCF5E4253A5F29003E2DC9 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 		22BCF5EA253A6580003E2DC9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -109,6 +133,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		223AF815253AC45000C7714A /* NewStudent */ = {
+			isa = PBXGroup;
+			children = (
+				220A7790253BC2A70082D765 /* NewStudent.storyboard */,
+				223AF816253AC46600C7714A /* NewStudentViewController.swift */,
+				220A7799253BC7D00082D765 /* NewStudentDatePickerHelper.swift */,
+				220A777E253B9D180082D765 /* NewStudentLayoutHelper.swift */,
+				220A77A1253BE0640082D765 /* NewStudentPickerViewDelegate.swift */,
+				220A7779253B9CC90082D765 /* NewStudentTextFieldDelegate.swift */,
+			);
+			path = NewStudent;
+			sourceTree = "<group>";
+		};
 		2244B06A2537F27B008CE5F1 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +175,7 @@
 				22BCF607253A7E5B003E2DC9 /* SceneDelegate.swift */,
 				2244B07F2537F27C008CE5F1 /* Assets.xcassets */,
 				2244B0842537F27C008CE5F1 /* Info.plist */,
+				223AF80D253ABC8A00C7714A /* Localizable.strings */,
 				22BCF5D3253A432D003E2DC9 /* Base */,
 				2244B0F12537FA92008CE5F1 /* LaunchScreen */,
 				2244B0F02537FA7F008CE5F1 /* Main */,
@@ -200,8 +238,11 @@
 			isa = PBXGroup;
 			children = (
 				22BCF5C9253A3CA8003E2DC9 /* Student.swift */,
+				223AF7F9253AB4BA00C7714A /* StudentCell.swift */,
+				223AF7F4253AB4AC00C7714A /* StudentFacade.swift */,
 				22BCF5CE253A42ED003E2DC9 /* Address.swift */,
 				22BCF5DC253A5C8D003E2DC9 /* Mother.swift */,
+				223AF815253AC45000C7714A /* NewStudent */,
 			);
 			path = Student;
 			sourceTree = "<group>";
@@ -209,7 +250,8 @@
 		22BCF5D3253A432D003E2DC9 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				22BCF5D4253A434C003E2DC9 /* Entity.swift */,
+				223AF7E9253AB09C00C7714A /* Entity.swift */,
+				223AF7E1253AAFC700C7714A /* EntityFacade.swift */,
 				22BCF5E4253A5F29003E2DC9 /* Validations.swift */,
 			);
 			path = Base;
@@ -219,6 +261,8 @@
 			isa = PBXGroup;
 			children = (
 				22BCF5EA253A6580003E2DC9 /* Constants.swift */,
+				220A77A6253BE3AC0082D765 /* Enums.swift */,
+				223AF801253ABB6B00C7714A /* Extensions.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -345,6 +389,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2244B0832537F27C008CE5F1 /* LaunchScreen.storyboard in Resources */,
+				220A778E253BC2A70082D765 /* NewStudent.storyboard in Resources */,
+				223AF80B253ABC8A00C7714A /* Localizable.strings in Resources */,
 				2244B0802537F27C008CE5F1 /* Assets.xcassets in Resources */,
 				2244B07E2537F27B008CE5F1 /* Main.storyboard in Resources */,
 			);
@@ -458,14 +504,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				2244B07B2537F27B008CE5F1 /* MainViewController.swift in Sources */,
-				22BCF5D5253A434C003E2DC9 /* Entity.swift in Sources */,
 				22BCF608253A7E5B003E2DC9 /* SceneDelegate.swift in Sources */,
+				223AF7EA253AB09C00C7714A /* Entity.swift in Sources */,
+				223AF7FA253AB4BA00C7714A /* StudentCell.swift in Sources */,
 				22BCF5CA253A3CA8003E2DC9 /* Student.swift in Sources */,
+				220A777A253B9CC90082D765 /* NewStudentTextFieldDelegate.swift in Sources */,
+				220A777F253B9D180082D765 /* NewStudentLayoutHelper.swift in Sources */,
 				22BCF5CF253A42ED003E2DC9 /* Address.swift in Sources */,
+				220A77A2253BE0640082D765 /* NewStudentPickerViewDelegate.swift in Sources */,
+				220A779A253BC7D00082D765 /* NewStudentDatePickerHelper.swift in Sources */,
 				22BCF5DD253A5C8D003E2DC9 /* Mother.swift in Sources */,
+				223AF7E2253AAFC700C7714A /* EntityFacade.swift in Sources */,
+				223AF802253ABB6B00C7714A /* Extensions.swift in Sources */,
+				223AF7F5253AB4AC00C7714A /* StudentFacade.swift in Sources */,
 				2244B0772537F27B008CE5F1 /* AppDelegate.swift in Sources */,
+				223AF817253AC46600C7714A /* NewStudentViewController.swift in Sources */,
 				22BCF5E5253A5F29003E2DC9 /* Validations.swift in Sources */,
 				22BCF5EB253A6580003E2DC9 /* Constants.swift in Sources */,
+				220A77A7253BE3AC0082D765 /* Enums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,11 +557,28 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		220A7790253BC2A70082D765 /* NewStudent.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				220A778F253BC2A70082D765 /* Base */,
+				220A7795253BC2AD0082D765 /* pt-BR */,
+			);
+			name = NewStudent.storyboard;
+			sourceTree = "<group>";
+		};
+		223AF80D253ABC8A00C7714A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				223AF80C253ABC8A00C7714A /* en */,
+				223AF811253ABC8C00C7714A /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		2244B07C2537F27B008CE5F1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2244B07D2537F27B008CE5F1 /* Base */,
-				2244B0AF2537F2D8008CE5F1 /* pt-BR */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -514,7 +587,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2244B0822537F27C008CE5F1 /* Base */,
-				2244B0B02537F2D8008CE5F1 /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

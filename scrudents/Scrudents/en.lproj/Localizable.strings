@@ -1,0 +1,57 @@
+/* 
+  Localizable.strings
+  Scrudents
+
+  Created by Wellington Nascente Hirsch on 17/10/20.
+  
+*/
+
+
+// - MARK: General
+"next" = "Next";
+"okay" = "Okay";
+
+
+// MARK: - Patterns
+"day.month" = "%2$02d/%1$02d";
+"day.month.year" = "%2$02d/%1$02d/%3$d";
+
+
+// MARK: - Errors
+"field.error" = "Campo Inválido";
+"field.error.msg" = "The value on %@'s field is not valid.";
+
+
+// MARK: - Address
+"address" = "Address";
+"address.cep" = "Postal Code";
+"address.street" = "Street";
+"address.number" = "Number";
+"address.addon" = "Add-on";
+"address.district" = "District";
+"address.city" = "City";
+"address.state" = "State";
+
+
+// MARK: - Mother
+"mother" = "Mother";
+"mother.name" = "Name";
+"mother.cpf" = "CPF";
+"mother.payday" = "Pay Day";
+
+
+// MARK: - Student
+"student" = "Student";
+"student.name" = "Name";
+"student.birthdate" = "Date of Birth";
+"student.grade" = "Grade";
+// Grade
+"grade.first" = "1st Grade";
+"grade.second" = "2nd Grade";
+"grade.third" = "3rd Grade";
+"grade.fourth" = "4th Grade";
+"grade.fifth" = "5th Grade";
+"grade.sixth" = "6th Grade";
+"grade.seventh" = "7th Grade";
+"grade.eighth" = "8th Grade";
+"grade.ninth" = "9th Grade";

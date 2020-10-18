@@ -14,31 +14,11 @@ import Foundation
 extension Date {
     
     func isValidPayday() -> Bool {
-        return (self > Date())
+        return (self > Date() + Date.Day)
     }
     
     func isValidBirthday() -> Bool {
-        let myCalendar = Calendar.current
-        var minimumDateComponents = myCalendar.dateComponents([.year, .month, .day], from: Date())
-        
-        if let actualYear = minimumDateComponents.year {
-            minimumDateComponents.year = actualYear - Constants.Validations.minimumAge
-            
-            if let minimumDate = myCalendar.date(from: minimumDateComponents) {
-                return (self <= minimumDate)
-            }
-        }
-        
-        return false
-    }
-    
-}
-
-//  MARK: - Int Validations
-extension Int {
-    
-    func isValidGrade() -> Bool {
-        return (self >= Constants.Validations.firstGrade && self <= Constants.Validations.lastGrade)
+        return (self <= Date() - Date.Year * Double(Constants.Validations.minimumAge))
     }
     
 }
@@ -71,7 +51,7 @@ extension String {
     }
     
     func isValidCPF() -> Bool {
-        let regex = try! NSRegularExpression(pattern: Constants.Validations.CPFFormat, options: .caseInsensitive)
+        let regex = try! NSRegularExpression(pattern: Constants.Validations.CPFRegex, options: .caseInsensitive)
         
         // FALSE se o CPF não possui o formato válido
         if regex.firstMatch(in: self, options: [], range: NSRange(location: 0, length: self.count)) == nil {
@@ -79,10 +59,8 @@ extension String {
         }
         
         // Garante os 11 digitos
-        var onlyDigits = self
-        onlyDigits.removeAll(where: { $0 == "." || $0 == "-" } )
-        
-        let digitsArray: [Int] = Array(arrayLiteral: onlyDigits).compactMap( { Int($0) } )
+        let stringArray = Array(self)
+        let digitsArray: [Int] = stringArray.compactMap( { Int(String($0)) } )
         if digitsArray.count != Constants.Validations.CPFDigits {
             return false
         }
@@ -110,7 +88,7 @@ extension String {
         }
         
         let firstRemainder = (sumFirst * 10) % 11
-        if firstRemainder != firstChecker || (firstRemainder == 10 && firstChecker == 0) {
+        if firstRemainder != firstChecker && !(firstRemainder == 10 && firstChecker == 0) {
             return false
         }
         
@@ -122,16 +100,17 @@ extension String {
             sumSecond += digit * (11 - index)
         }
         
-        if (sumSecond * 10) % 11 != secondChecker {
-            return false
+        let secondRemainder = (sumSecond * 10) % 11
+        if secondRemainder == secondChecker || (secondRemainder == 10 && secondChecker == 0) {
+            return true
         }
         else {
-            return true
+            return false
         }
     }
     
     func isValidCEP() -> Bool {
-        let regex = try! NSRegularExpression(pattern: Constants.Validations.CEPFormat, options: .caseInsensitive)
+        let regex = try! NSRegularExpression(pattern: Constants.Validations.CEPRegex, options: .caseInsensitive)
         return regex.firstMatch(in: self, options: [], range: NSRange(location: 0, length: self.count)) != nil
     }
     

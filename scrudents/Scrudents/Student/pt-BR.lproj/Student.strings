@@ -1,0 +1,78 @@
+
+/* Class = "UILabel"; text = "Street:"; ObjectID = "0yM-2g-8XY"; */
+"0yM-2g-8XY.text" = "Rua:";
+
+/* Class = "UILabel"; text = "Not found"; ObjectID = "879-Rs-K9Z"; */
+"879-Rs-K9Z.text" = "Não encontrado";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "8b2-Yy-E79"; */
+"8b2-Yy-E79.text" = "Nome:";
+
+/* Class = "UILabel"; text = "Pay Day"; ObjectID = "HvN-oR-zd7"; */
+"HvN-oR-zd7.text" = "Dia do Pagamento";
+
+/* Class = "UILabel"; text = "Date of Birth:"; ObjectID = "I00-T0-Dql"; */
+"I00-T0-Dql.text" = "Data de Nascimento:";
+
+/* Class = "UILabel"; text = "Not found"; ObjectID = "J8u-tw-rS4"; */
+"J8u-tw-rS4.text" = "Não encontrado";
+
+/* Class = "UILabel"; text = "Not found"; ObjectID = "JDD-sq-BUx"; */
+"JDD-sq-BUx.text" = "Não encontrado";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "JQD-PM-Dnb"; */
+"JQD-PM-Dnb.text" = "Endereço";
+
+/* Class = "UILabel"; text = "Not found"; ObjectID = "KkX-S4-CEh"; */
+"KkX-S4-CEh.text" = "Não encontrado";
+
+/* Class = "UILabel"; text = "Not found"; ObjectID = "MYy-pL-GZo"; */
+"MYy-pL-GZo.text" = "Não encontrado";
+
+/* Class = "UILabel"; text = "Postal Code:"; ObjectID = "YTY-46-WPR"; */
+"YTY-46-WPR.text" = "CEP:";
+
+/* Class = "UILabel"; text = "Not found"; ObjectID = "ZVL-t5-1E6"; */
+"ZVL-t5-1E6.text" = "Não encontrado";
+
+/* Class = "UILabel"; text = "City:"; ObjectID = "Zjn-Mj-CJu"; */
+"Zjn-Mj-CJu.text" = "Cidade:";
+
+/* Class = "UINavigationItem"; title = "Student"; ObjectID = "cPp-NA-Mgz"; */
+"cPp-NA-Mgz.title" = "Estudante";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "dHR-ZR-yV0"; */
+"dHR-ZR-yV0.title" = "Voltar";
+
+/* Class = "UILabel"; text = "Add-on:"; ObjectID = "ewu-3w-5P0"; */
+"ewu-3w-5P0.text" = "Complemento:";
+
+/* Class = "UILabel"; text = "CPF:"; ObjectID = "j9A-8V-L1e"; */
+"j9A-8V-L1e.text" = "CPF:";
+
+/* Class = "UILabel"; text = "Not found"; ObjectID = "n7Y-r8-qfk"; */
+"n7Y-r8-qfk.text" = "Não encontrado";
+
+/* Class = "UILabel"; text = "Not found"; ObjectID = "oMN-io-KuN"; */
+"oMN-io-KuN.text" = "Não encontrado";
+
+/* Class = "UILabel"; text = "Not found"; ObjectID = "oh6-I7-1cA"; */
+"oh6-I7-1cA.text" = "Não encontrado";
+
+/* Class = "UILabel"; text = "District:"; ObjectID = "tZk-q6-Pqo"; */
+"tZk-q6-Pqo.text" = "Bairro:";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "ueX-7C-o22"; */
+"ueX-7C-o22.text" = "Nome:";
+
+/* Class = "UILabel"; text = "Not found"; ObjectID = "wu9-X9-Vvc"; */
+"wu9-X9-Vvc.text" = "Não encontrado";
+
+/* Class = "UILabel"; text = "Mother Information"; ObjectID = "ydB-Gy-fv3"; */
+"ydB-Gy-fv3.text" = "Dados da Mãe";
+
+/* Class = "UILabel"; text = "Grade:"; ObjectID = "zXV-fn-0zn"; */
+"zXV-fn-0zn.text" = "Série:";
+
+/* Class = "UILabel"; text = "Not found"; ObjectID = "zde-6D-QIw"; */
+"zde-6D-QIw.text" = "Não encontrado";

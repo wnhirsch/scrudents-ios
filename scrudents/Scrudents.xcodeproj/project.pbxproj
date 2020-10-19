@@ -14,6 +14,7 @@
 		220A779A253BC7D00082D765 /* NewStudentDatePickerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220A7799253BC7D00082D765 /* NewStudentDatePickerHelper.swift */; };
 		220A77A2253BE0640082D765 /* NewStudentPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220A77A1253BE0640082D765 /* NewStudentPickerViewDelegate.swift */; };
 		220A77A7253BE3AC0082D765 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220A77A6253BE3AC0082D765 /* Enums.swift */; };
+		221B9EFC253CD55800C60673 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221B9EFB253CD55800C60673 /* StudentViewController.swift */; };
 		223AF7E2253AAFC700C7714A /* EntityFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223AF7E1253AAFC700C7714A /* EntityFacade.swift */; };
 		223AF7EA253AB09C00C7714A /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223AF7E9253AB09C00C7714A /* Entity.swift */; };
 		223AF7F5253AB4AC00C7714A /* StudentFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223AF7F4253AB4AC00C7714A /* StudentFacade.swift */; };
@@ -34,6 +35,9 @@
 		22BCF5E5253A5F29003E2DC9 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCF5E4253A5F29003E2DC9 /* Validations.swift */; };
 		22BCF5EB253A6580003E2DC9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCF5EA253A6580003E2DC9 /* Constants.swift */; };
 		22BCF608253A7E5B003E2DC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCF607253A7E5B003E2DC9 /* SceneDelegate.swift */; };
+		22F7E994253CE357008B45AD /* Student.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F7E996253CE357008B45AD /* Student.storyboard */; };
+		22F7E9A3253D1075008B45AD /* MainDatePickerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F7E9A2253D1075008B45AD /* MainDatePickerHelper.swift */; };
+		22F7E9A8253D1168008B45AD /* MainPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F7E9A7253D1168008B45AD /* MainPickerViewDelegate.swift */; };
 		41D3081E420A5549E489E5B7 /* Pods_Scrudents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9495412EC348282480E499BC /* Pods_Scrudents.framework */; };
 		5A66DD581247ED563D16B0C9 /* Pods_ScrudentsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13C03F013B9140753BCB1CF /* Pods_ScrudentsUITests.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +68,7 @@
 		220A7799253BC7D00082D765 /* NewStudentDatePickerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStudentDatePickerHelper.swift; sourceTree = "<group>"; };
 		220A77A1253BE0640082D765 /* NewStudentPickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStudentPickerViewDelegate.swift; sourceTree = "<group>"; };
 		220A77A6253BE3AC0082D765 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		221B9EFB253CD55800C60673 /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
 		222FF9A8253A2D07003C658C /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		222FF9A9253A2D07003C658C /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		223AF7E1253AAFC700C7714A /* EntityFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityFacade.swift; sourceTree = "<group>"; };
@@ -95,6 +100,11 @@
 		22BCF5E4253A5F29003E2DC9 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 		22BCF5EA253A6580003E2DC9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		22BCF607253A7E5B003E2DC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		22F7E995253CE357008B45AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Student.storyboard; sourceTree = "<group>"; };
+		22F7E99E253CF281008B45AD /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Student.strings"; sourceTree = "<group>"; };
+		22F7E9A2253D1075008B45AD /* MainDatePickerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDatePickerHelper.swift; sourceTree = "<group>"; };
+		22F7E9A7253D1168008B45AD /* MainPickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPickerViewDelegate.swift; sourceTree = "<group>"; };
+		22F7E9B6253D2725008B45AD /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		26D32E69AC5E06750CD6DC3B /* Pods_ScrudentsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrudentsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C6701D77CF8E9149959237 /* Pods-Scrudents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrudents.release.xcconfig"; path = "Target Support Files/Pods-Scrudents/Pods-Scrudents.release.xcconfig"; sourceTree = "<group>"; };
 		339397F3B37F8222729BCF99 /* Pods-Scrudents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrudents.debug.xcconfig"; path = "Target Support Files/Pods-Scrudents/Pods-Scrudents.debug.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +218,8 @@
 			children = (
 				2244B07C2537F27B008CE5F1 /* Main.storyboard */,
 				2244B07A2537F27B008CE5F1 /* MainViewController.swift */,
+				22F7E9A2253D1075008B45AD /* MainDatePickerHelper.swift */,
+				22F7E9A7253D1168008B45AD /* MainPickerViewDelegate.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -237,9 +249,11 @@
 		22BCF5C8253A3C77003E2DC9 /* Student */ = {
 			isa = PBXGroup;
 			children = (
+				22F7E996253CE357008B45AD /* Student.storyboard */,
 				22BCF5C9253A3CA8003E2DC9 /* Student.swift */,
 				223AF7F9253AB4BA00C7714A /* StudentCell.swift */,
 				223AF7F4253AB4AC00C7714A /* StudentFacade.swift */,
+				221B9EFB253CD55800C60673 /* StudentViewController.swift */,
 				22BCF5CE253A42ED003E2DC9 /* Address.swift */,
 				22BCF5DC253A5C8D003E2DC9 /* Mother.swift */,
 				223AF815253AC45000C7714A /* NewStudent */,
@@ -388,6 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F7E994253CE357008B45AD /* Student.storyboard in Resources */,
 				2244B0832537F27C008CE5F1 /* LaunchScreen.storyboard in Resources */,
 				220A778E253BC2A70082D765 /* NewStudent.storyboard in Resources */,
 				223AF80B253ABC8A00C7714A /* Localizable.strings in Resources */,
@@ -503,6 +518,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				221B9EFC253CD55800C60673 /* StudentViewController.swift in Sources */,
 				2244B07B2537F27B008CE5F1 /* MainViewController.swift in Sources */,
 				22BCF608253A7E5B003E2DC9 /* SceneDelegate.swift in Sources */,
 				223AF7EA253AB09C00C7714A /* Entity.swift in Sources */,
@@ -512,6 +528,7 @@
 				220A777F253B9D180082D765 /* NewStudentLayoutHelper.swift in Sources */,
 				22BCF5CF253A42ED003E2DC9 /* Address.swift in Sources */,
 				220A77A2253BE0640082D765 /* NewStudentPickerViewDelegate.swift in Sources */,
+				22F7E9A8253D1168008B45AD /* MainPickerViewDelegate.swift in Sources */,
 				220A779A253BC7D00082D765 /* NewStudentDatePickerHelper.swift in Sources */,
 				22BCF5DD253A5C8D003E2DC9 /* Mother.swift in Sources */,
 				223AF7E2253AAFC700C7714A /* EntityFacade.swift in Sources */,
@@ -519,6 +536,7 @@
 				223AF7F5253AB4AC00C7714A /* StudentFacade.swift in Sources */,
 				2244B0772537F27B008CE5F1 /* AppDelegate.swift in Sources */,
 				223AF817253AC46600C7714A /* NewStudentViewController.swift in Sources */,
+				22F7E9A3253D1075008B45AD /* MainDatePickerHelper.swift in Sources */,
 				22BCF5E5253A5F29003E2DC9 /* Validations.swift in Sources */,
 				22BCF5EB253A6580003E2DC9 /* Constants.swift in Sources */,
 				220A77A7253BE3AC0082D765 /* Enums.swift in Sources */,
@@ -579,6 +597,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2244B07D2537F27B008CE5F1 /* Base */,
+				22F7E9B6253D2725008B45AD /* pt-BR */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -589,6 +608,15 @@
 				2244B0822537F27C008CE5F1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		22F7E996253CE357008B45AD /* Student.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22F7E995253CE357008B45AD /* Base */,
+				22F7E99E253CF281008B45AD /* pt-BR */,
+			);
+			name = Student.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

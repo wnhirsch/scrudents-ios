@@ -1,1 +1,39 @@
 
+/* Class = "UIButton"; normalTitle = "Reset"; ObjectID = "1nb-lM-frT"; */
+"1nb-lM-frT.normalTitle" = "Remover Filtros";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "43N-v6-VYD"; */
+"43N-v6-VYD.text" = "Título";
+
+/* Class = "UINavigationItem"; title = "Students"; ObjectID = "64r-qU-Ccs"; */
+"64r-qU-Ccs.title" = "Estudantes";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "6pN-FQ-UFD"; */
+"6pN-FQ-UFD.placeholder" = "Buscar";
+
+/* Class = "UITextField"; placeholder = "Student's Name"; ObjectID = "BTy-ls-bAK"; */
+"BTy-ls-bAK.placeholder" = "Nome do Estudante";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "Fnw-NO-Dzi"; */
+"Fnw-NO-Dzi.text" = "Detalhes";
+
+/* Class = "UITextField"; placeholder = "None"; ObjectID = "Lee-8X-dZ1"; */
+"Lee-8X-dZ1.placeholder" = "Nenhuma";
+
+/* Class = "UITextField"; placeholder = "01/01/2000"; ObjectID = "PQB-Pc-FcS"; */
+"PQB-Pc-FcS.placeholder" = "01/01/2000";
+
+/* Class = "UILabel"; text = "Search for:"; ObjectID = "ZiU-t3-Dx5"; */
+"ZiU-t3-Dx5.text" = "Buscar por:";
+
+/* Class = "UILabel"; text = "Date of Birth between:"; ObjectID = "bqV-XE-gpF"; */
+"bqV-XE-gpF.text" = "Data de Nascimento entre:";
+
+/* Class = "UIButton"; normalTitle = "Apply"; ObjectID = "jZ8-1J-tud"; */
+"jZ8-1J-tud.normalTitle" = "Aplicar";
+
+/* Class = "UILabel"; text = "Grade:"; ObjectID = "qvk-VS-EL4"; */
+"qvk-VS-EL4.text" = "Série:";
+
+/* Class = "UITextField"; placeholder = "01/01/2000"; ObjectID = "ugM-8S-MHA"; */
+"ugM-8S-MHA.placeholder" = "01/01/2000";

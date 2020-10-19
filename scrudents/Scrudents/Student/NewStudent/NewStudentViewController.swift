@@ -13,6 +13,7 @@ class NewStudentViewController: UIViewController {
     // MARK: - Storyboard Outlets
     @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBOutlet weak var topbar: UINavigationItem!
     @IBOutlet weak var cancelButton: UIBarButtonItem!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
@@ -50,6 +51,8 @@ class NewStudentViewController: UIViewController {
         super.viewDidLoad()
         
         if isEditingStudent, let student = self.student, let address = student.address, let mother = student.mother {
+            self.topbar.title = "student.edit".localized
+            
             self.name = student.name
             self.studentNameField.text = student.name
             
@@ -57,7 +60,7 @@ class NewStudentViewController: UIViewController {
             self.studentBirthdateField.text = "day.month.year".localized(student.birthdate.day, student.birthdate.month, student.birthdate.year)
             
             self.grade = Grade(rawValue: student.grade)
-            self.studentBirthdateField.text = student.grade.description
+            self.studentGradeField.text = student.grade.description
             
             self.address = Address(copying: address)
             self.addressCEPField.text = address.cep
@@ -74,7 +77,8 @@ class NewStudentViewController: UIViewController {
             self.addressPaydayField.text = "day.month.year".localized(mother.payday.day, mother.payday.month, mother.payday.year)
         }
         else {
-            
+            self.topbar.title = "student.create".localized
+            self.student = Student()
         }
         
         self.setupTextFields()
@@ -91,12 +95,7 @@ class NewStudentViewController: UIViewController {
     
     // MARK: - Storyboard Actions
     @IBAction func cancel(_ sender: Any) {
-        if isEditingStudent {
-            // unwind
-        }
-        else {
-            self.dismiss(animated: true, completion: nil)
-        }
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func save(_ sender: Any) {
@@ -162,7 +161,8 @@ class NewStudentViewController: UIViewController {
             editStudent.mother = mother
             
             StudentFacade.shared.update(editStudent)
-            // 
+            let studentInfo: [String : Student] = ["student" : editStudent]
+            NotificationCenter.default.post(name: .studentChanged, object: nil, userInfo: studentInfo)
         }
         else {
             let newStudent = Student(name: name,
@@ -172,8 +172,10 @@ class NewStudentViewController: UIViewController {
                                      mother: mother)
             
             StudentFacade.shared.insert(newStudent)
-            self.dismiss(animated: true, completion: nil)
+            NotificationCenter.default.post(name: .refreshMainTable, object: nil)
         }
+        
+        self.dismiss(animated: true, completion: nil)
     }
     
 }

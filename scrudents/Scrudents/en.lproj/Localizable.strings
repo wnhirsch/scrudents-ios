@@ -8,13 +8,16 @@
 
 
 // - MARK: General
-"next" = "Next";
+"done" = "done";
+"next" = "next";
 "okay" = "Okay";
 
 
 // MARK: - Patterns
+"city.state" = "%@, %@";
 "day.month" = "%2$02d/%1$02d";
 "day.month.year" = "%2$02d/%1$02d/%3$d";
+"street.number" = "%@, %d";
 
 
 // MARK: - Errors
@@ -40,12 +43,25 @@
 "mother.payday" = "Pay Day";
 
 
+// MARK: - Search Topic
+"filter.student.name" = "Student's Name";
+"filter.address.street" = "Street";
+"filter.address.district" = "District";
+"filter.address.city" = "City";
+"filter.address.state" = "State";
+"filter.mother.name" = "Mother's Name";
+
+
 // MARK: - Student
 "student" = "Student";
+"student.create" = "Create Student";
+"student.createdAt" = "Registered at %@";
+"student.edit" = "Edit Student";
 "student.name" = "Name";
 "student.birthdate" = "Date of Birth";
 "student.grade" = "Grade";
 // Grade
+"grade.none" = "None";
 "grade.first" = "1st Grade";
 "grade.second" = "2nd Grade";
 "grade.third" = "3rd Grade";

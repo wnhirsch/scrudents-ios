@@ -8,13 +8,16 @@
 
 
 // - MARK: General
-"next" = "Próximo";
+"done" = "concluído";
+"next" = "seguinte";
 "okay" = "Entendi";
 
 
 // - MARK: Patterns
+"city.state" = "%@, %@";
 "day.month" = "%02d/%02d";
 "day.month.year" = "%02d/%02d/%d";
+"street.number" = "%@, %d";
 
 
 // MARK: - Errors
@@ -40,12 +43,25 @@
 "mother.payday" = "Dia do Pagamento";
 
 
+// MARK: - Search Topic
+"filter.student.name" = "Nome do Estudante";
+"filter.address.street" = "Rua";
+"filter.address.district" = "Bairro";
+"filter.address.city" = "Cidade";
+"filter.address.state" = "Estado";
+"filter.mother.name" = "Nome da Mãe";
+
+
 // MARK: - Student
 "student" = "Estudante";
+"student.create" = "Criar Estudante";
+"student.createdAt" = "Matriculado desde %@";
+"student.edit" = "Editar Estudante";
 "student.name" = "Nome";
 "student.birthdate" = "Data de Nascimento";
 "student.grade" = "Série";
 // Grade
+"grade.none" = "Nenhuma";
 "grade.first" = "1° Série";
 "grade.second" = "2° Série";
 "grade.third" = "3° Série";

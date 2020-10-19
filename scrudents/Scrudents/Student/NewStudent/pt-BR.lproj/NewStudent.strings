@@ -1,6 +1,6 @@
 
 /* Class = "UILabel"; text = "Pay Day"; ObjectID = "1F0-Qu-oBw"; */
-"1F0-Qu-oBw.text" = "Data do Pagamento";
+"1F0-Qu-oBw.text" = "Dia do Pagamento";
 
 /* Class = "UITextField"; placeholder = "1234"; ObjectID = "4pG-De-1It"; */
 "4pG-De-1It.placeholder" = "1234";
@@ -26,13 +26,13 @@
 /* Class = "UILabel"; text = "Street"; ObjectID = "FeK-kh-T1e"; */
 "FeK-kh-T1e.text" = "Rua";
 
-/* Class = "UITextField"; placeholder = "Apto. 456"; ObjectID = "G4V-CW-r7O"; */
-"G4V-CW-r7O.placeholder" = "Apto. 456";
+/* Class = "UITextField"; placeholder = "Apto. 567"; ObjectID = "G4V-CW-r7O"; */
+"G4V-CW-r7O.placeholder" = "Apto. 567";
 
 /* Class = "UITextField"; placeholder = "João Silveira"; ObjectID = "Htb-DK-xPQ"; */
 "Htb-DK-xPQ.placeholder" = "João Silveira";
 
-/* Class = "UILabel"; text = "Birthdate"; ObjectID = "I00-T0-Dql"; */
+/* Class = "UILabel"; text = "Date of Birth"; ObjectID = "I00-T0-Dql"; */
 "I00-T0-Dql.text" = "Data de Nascimento";
 
 /* Class = "UILabel"; text = "Address"; ObjectID = "JQD-PM-Dnb"; */

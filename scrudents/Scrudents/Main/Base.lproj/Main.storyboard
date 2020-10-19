@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,13 +18,121 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="P5h-2r-cpa">
-                                <rect key="frame" x="16" y="104" width="382" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="search" smartDashesType="no" smartQuotesType="no" textContentType="name"/>
-                            </textField>
+                            <searchBar contentMode="redraw" placeholder="Search" showsBookmarkButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6pN-FQ-UFD">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search" smartDashesType="no" textContentType="name"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9e5-Va-FdH"/>
+                                </connections>
+                            </searchBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vyT-aT-F1V" userLabel="Filter Stack View">
+                                <rect key="frame" x="16" y="152" width="382" height="200"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="fHD-Mr-LZz" userLabel="Search Property Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search for:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiU-t3-Dx5" userLabel="Student Grade Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Student's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BTy-ls-bAK" userLabel="Student Grade Text Field">
+                                                <rect key="frame" x="0.0" y="19" width="382" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" smartDashesType="no"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="RId-6i-sIn"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="eiI-gE-dti" userLabel="Student Birthdate Stack View">
+                                        <rect key="frame" x="0.0" y="58" width="382" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth between:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqV-XE-gpF" userLabel="Student Birthdate Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KKT-c9-neE">
+                                                <rect key="frame" x="0.0" y="19" width="382" height="31"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="01/01/2000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PQB-Pc-FcS" userLabel="Student Birthdate Text Field">
+                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" smartDashesType="no"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="fT2-7n-xQb"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="01/01/2000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ugM-8S-MHA" userLabel="Student Birthdate Text Field">
+                                                        <rect key="frame" x="191" y="0.0" width="191" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" smartDashesType="no"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="WTz-6V-cgX"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="ugM-8S-MHA" firstAttribute="width" secondItem="KKT-c9-neE" secondAttribute="width" multiplier="0.5" id="SJ0-cY-B69"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Frs-dm-bin" userLabel="Student Grade Stack View">
+                                        <rect key="frame" x="0.0" y="116" width="382" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvk-VS-EL4" userLabel="Student Grade Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="None" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lee-8X-dZ1" userLabel="Student Grade Text Field">
+                                                <rect key="frame" x="0.0" y="19" width="382" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" smartDashesType="no"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ViQ-CM-YH7"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JiS-Jf-KJb" userLabel="Filter Menu Stack View">
+                                        <rect key="frame" x="0.0" y="174" width="382" height="26"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nb-lM-frT" userLabel="Reset Filter Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="26"/>
+                                                <state key="normal" title="Reset"/>
+                                                <connections>
+                                                    <action selector="resetFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hw0-qE-2t0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZ8-1J-tud" userLabel="Apply Filter Button">
+                                                <rect key="frame" x="191" y="0.0" width="191" height="26"/>
+                                                <state key="normal" title="Apply"/>
+                                                <connections>
+                                                    <action selector="applyFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XMi-hH-N9K"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="jZ8-1J-tud" firstAttribute="width" secondItem="JiS-Jf-KJb" secondAttribute="width" multiplier="0.5" id="cpN-Ek-b9J"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Frs-dm-bin" firstAttribute="height" secondItem="vyT-aT-F1V" secondAttribute="height" multiplier="0.25" id="BUd-L6-wVl"/>
+                                    <constraint firstAttribute="height" constant="200" id="S99-sZ-idE"/>
+                                    <constraint firstItem="fHD-Mr-LZz" firstAttribute="height" secondItem="vyT-aT-F1V" secondAttribute="height" multiplier="0.25" id="lY6-JJ-w30"/>
+                                    <constraint firstItem="eiI-gE-dti" firstAttribute="height" secondItem="vyT-aT-F1V" secondAttribute="height" multiplier="0.25" id="r8u-ae-Qbu"/>
+                                </constraints>
+                            </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SvQ-3n-RKm">
-                                <rect key="frame" x="0.0" y="154" width="414" height="708"/>
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Main:StudentCell" textLabel="43N-v6-VYD" detailTextLabel="Fnw-NO-Dzi" style="IBUITableViewCellStyleSubtitle" id="u8B-K1-NEf" customClass="StudentCell" customModule="Scrudents" customModuleProvider="target">
@@ -63,27 +172,38 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QIS-6K-wRb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" name="AccentColor"/>
                         <constraints>
-                            <constraint firstItem="P5h-2r-cpa" firstAttribute="trailing" secondItem="QIS-6K-wRb" secondAttribute="trailing" constant="-16" id="3Og-HS-ezU"/>
+                            <constraint firstItem="vyT-aT-F1V" firstAttribute="trailing" secondItem="QIS-6K-wRb" secondAttribute="trailing" constant="-16" id="1Zg-C2-qtW"/>
                             <constraint firstItem="SvQ-3n-RKm" firstAttribute="bottom" secondItem="QIS-6K-wRb" secondAttribute="bottom" id="5FB-14-iSL"/>
                             <constraint firstItem="SvQ-3n-RKm" firstAttribute="leading" secondItem="QIS-6K-wRb" secondAttribute="leading" id="9Ze-n7-C8Z"/>
-                            <constraint firstItem="P5h-2r-cpa" firstAttribute="leading" secondItem="QIS-6K-wRb" secondAttribute="leading" constant="16" id="XNt-Yf-hg2"/>
-                            <constraint firstItem="P5h-2r-cpa" firstAttribute="top" secondItem="QIS-6K-wRb" secondAttribute="top" constant="16" id="kTX-Pt-J4f"/>
-                            <constraint firstItem="SvQ-3n-RKm" firstAttribute="top" secondItem="P5h-2r-cpa" secondAttribute="bottom" constant="16" id="tBE-dA-DE2"/>
+                            <constraint firstItem="6pN-FQ-UFD" firstAttribute="trailing" secondItem="QIS-6K-wRb" secondAttribute="trailing" id="H6g-1J-PMz"/>
+                            <constraint firstItem="vyT-aT-F1V" firstAttribute="leading" secondItem="QIS-6K-wRb" secondAttribute="leading" constant="16" id="RJb-rY-hJR"/>
+                            <constraint firstItem="vyT-aT-F1V" firstAttribute="bottom" secondItem="SvQ-3n-RKm" secondAttribute="top" constant="208" identifier="showFilterConstraint" id="TQa-TD-21I"/>
+                            <constraint firstItem="vyT-aT-F1V" firstAttribute="top" secondItem="6pN-FQ-UFD" secondAttribute="bottom" constant="8" id="cXW-5G-2jC"/>
+                            <constraint firstItem="6pN-FQ-UFD" firstAttribute="leading" secondItem="QIS-6K-wRb" secondAttribute="leading" id="cpW-sz-ere"/>
+                            <constraint firstItem="6pN-FQ-UFD" firstAttribute="top" secondItem="QIS-6K-wRb" secondAttribute="top" id="t2S-XA-0JU"/>
                             <constraint firstItem="SvQ-3n-RKm" firstAttribute="trailing" secondItem="QIS-6K-wRb" secondAttribute="trailing" id="tdB-2F-C9m"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Students" id="64r-qU-Ccs">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="JLq-jH-WMy">
-                            <color key="tintColor" systemColor="labelColor"/>
+                            <color key="tintColor" name="AccentColor"/>
                             <connections>
                                 <action selector="newStudent:" destination="BYZ-38-t0r" id="dU1-fF-JK4"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="applyFilterButton" destination="jZ8-1J-tud" id="gs7-XM-B9X"/>
+                        <outlet property="gradeField" destination="Lee-8X-dZ1" id="fT0-xK-LFR"/>
                         <outlet property="mainTableView" destination="SvQ-3n-RKm" id="cQL-pp-0Jm"/>
+                        <outlet property="maxBirthdateField" destination="ugM-8S-MHA" id="eZk-P3-zRH"/>
+                        <outlet property="minBirthdateField" destination="PQB-Pc-FcS" id="rkG-yR-VhV"/>
                         <outlet property="newStudentButton" destination="JLq-jH-WMy" id="HNq-63-Z1L"/>
+                        <outlet property="resetFilterButton" destination="1nb-lM-frT" id="cQN-Xu-2Ya"/>
+                        <outlet property="searchTopicField" destination="BTy-ls-bAK" id="6lz-Jr-kB6"/>
+                        <outlet property="textSearchBar" destination="6pN-FQ-UFD" id="nlt-TU-QXR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -97,6 +217,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oLe-7r-7pT">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" name="AccentColor"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Jre-zk-d5f"/>
@@ -108,8 +230,11 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <namedColor name="AccentColor">
+            <color red="0.58039215686274515" green="0.73725490196078436" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

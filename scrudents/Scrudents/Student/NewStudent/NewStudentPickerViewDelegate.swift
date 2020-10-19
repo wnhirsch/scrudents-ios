@@ -11,6 +11,7 @@ import UIKit
 extension NewStudentViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func setupGradePickerView() {
+        self.gradeDataSource.remove(at: Grade.none.rawValue)
         self.gradePickerView.delegate = self
         self.studentGradeField.inputView = self.gradePickerView
         self.studentGradeField.text = self.gradeDataSource[0].description

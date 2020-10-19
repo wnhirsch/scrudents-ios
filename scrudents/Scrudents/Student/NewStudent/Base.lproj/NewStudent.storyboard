@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,6 +17,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zBS-3K-d0r">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </navigationBar>
                     <connections>
                         <segue destination="zCf-wB-7Lw" kind="relationship" relationship="rootViewController" id="acX-a3-3UB"/>
@@ -41,8 +43,9 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDh-3I-dwA">
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                                                <color key="tintColor" name="AccentColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="AccentColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="XgC-c0-Kwe" userLabel="Student Stack View">
@@ -73,7 +76,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="dZY-sG-Abb" userLabel="Student Birthdate Stack View">
                                                         <rect key="frame" x="0.0" y="66" width="382" height="50"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthdate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I00-T0-Dql" userLabel="Student Birthdate Label">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I00-T0-Dql" userLabel="Student Birthdate Label">
                                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="17"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <color key="textColor" systemColor="secondaryLabelColor"/>
@@ -119,7 +122,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQD-PM-Dnb">
                                                 <rect key="frame" x="0.0" y="234.5" width="382" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="AccentColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dF2-cx-z3L" userLabel="Address Stack View">
@@ -208,7 +211,7 @@
                                                                 <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apto. 456" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G4V-CW-r7O" userLabel="Address Addon Text Field">
+                                                            <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apto. 567" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G4V-CW-r7O" userLabel="Address Addon Text Field">
                                                                 <rect key="frame" x="0.0" y="19" width="382" height="31"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="address-line2"/>
@@ -247,16 +250,16 @@
                                                         <rect key="frame" x="0.0" y="264" width="382" height="50"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="zhl-2z-Vsn" userLabel="Address City Stack View">
-                                                                <rect key="frame" x="0.0" y="0.0" width="297.5" height="50"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="183" height="50"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zgw-M1-sBV" userLabel="Address City Label">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="297.5" height="17"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="17"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="São Paulo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e9D-26-22E" userLabel="Address City Text Field">
-                                                                        <rect key="frame" x="0.0" y="19" width="297.5" height="31"/>
+                                                                        <rect key="frame" x="0.0" y="19" width="183" height="31"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" smartDashesType="no" textContentType="address-level2"/>
                                                                         <connections>
@@ -269,16 +272,16 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Q91-zu-sV4" userLabel="Address State Stack View">
-                                                                <rect key="frame" x="305.5" y="0.0" width="76.5" height="50"/>
+                                                                <rect key="frame" x="191" y="0.0" width="191" height="50"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7KD-ED-mfW" userLabel="Address State Label">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="76.5" height="17"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="191" height="17"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="SP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eiu-i9-UfB" userLabel="Address State Text Field">
-                                                                        <rect key="frame" x="0.0" y="19" width="76.5" height="31"/>
+                                                                        <rect key="frame" x="0.0" y="19" width="191" height="31"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" returnKeyType="next" smartDashesType="no" textContentType="address-level1"/>
                                                                         <connections>
@@ -292,7 +295,7 @@
                                                             </stackView>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstItem="Q91-zu-sV4" firstAttribute="width" secondItem="4nf-8a-wzh" secondAttribute="width" multiplier="0.2" id="MSx-WD-2F9"/>
+                                                            <constraint firstItem="Q91-zu-sV4" firstAttribute="width" secondItem="4nf-8a-wzh" secondAttribute="width" multiplier="0.5" id="MSx-WD-2F9"/>
                                                         </constraints>
                                                     </stackView>
                                                 </subviews>
@@ -300,7 +303,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mother Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydB-Gy-fv3">
                                                 <rect key="frame" x="0.0" y="601" width="382" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="AccentColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nYG-7h-jtO" userLabel="Mother Stack View">
@@ -388,6 +391,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2Lh-5v-FpK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" name="AccentColor"/>
                         <constraints>
                             <constraint firstItem="AOy-uZ-013" firstAttribute="top" secondItem="2Lh-5v-FpK" secondAttribute="top" id="HMS-bY-Ays"/>
                             <constraint firstItem="AOy-uZ-013" firstAttribute="height" secondItem="2Lh-5v-FpK" secondAttribute="height" id="YMh-ni-JLx"/>
@@ -397,11 +401,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Create Student" id="cPp-NA-Mgz">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="dHR-ZR-yV0">
+                            <color key="tintColor" name="AccentColor"/>
                             <connections>
                                 <action selector="cancel:" destination="zCf-wB-7Lw" id="wLO-0f-V4M"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="gK1-3Q-CIt">
+                            <color key="tintColor" name="AccentColor"/>
                             <connections>
                                 <action selector="save:" destination="zCf-wB-7Lw" id="eZq-1l-oM0"/>
                             </connections>
@@ -424,6 +430,7 @@
                         <outlet property="studentBirthdateField" destination="rLt-oG-gWc" id="0D4-Sy-0A1"/>
                         <outlet property="studentGradeField" destination="EnG-Wa-k9e" id="JII-dF-5S9"/>
                         <outlet property="studentNameField" destination="Htb-DK-xPQ" id="L8K-nw-D1x"/>
+                        <outlet property="topbar" destination="cPp-NA-Mgz" id="cYr-6O-6x2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E1d-S6-ikq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -432,6 +439,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.58039215686274515" green="0.73725490196078436" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

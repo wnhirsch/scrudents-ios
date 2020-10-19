@@ -24,23 +24,9 @@ class Student: Object, Entity {
     // Série de Ingresso
     @objc dynamic var grade: Int = Int()
     // Endereço do Estudante
-    @objc dynamic var address: Address? {
-        get {
-            return self.address ?? Address()
-        }
-        set {
-            self.address = newValue ?? Address()
-        }
-    }
+    @objc dynamic var address: Address? = Address()
     // Informações sobre a Mãe do Estudante
-    @objc dynamic var mother: Mother? {
-        get {
-            return self.mother ?? Mother()
-        }
-        set {
-            self.mother = newValue ?? Mother()
-        }
-    }
+    @objc dynamic var mother: Mother? = Mother()
     
     override static func primaryKey() -> String? {
         return "id"
@@ -48,6 +34,9 @@ class Student: Object, Entity {
     
     convenience init(copying student: Student) {
         self.init()
+        self.id = student.id
+        self.createdAt = student.createdAt
+        self.modifiedAt = student.modifiedAt
         self.name = student.name
         self.birthdate = student.birthdate
         self.grade = student.grade

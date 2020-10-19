@@ -20,7 +20,7 @@ class Facade<T: Object> where T: Entity {
         }
     }
     
-    func insert(_ entities: [T], sync: Bool) {
+    func insert(_ entities: [T]) {
         guard let realm = try? Realm() else {
             return
         }
@@ -31,15 +31,14 @@ class Facade<T: Object> where T: Entity {
     }
     
     func update(_ entity: T) {
-        var entity = entity
-        
         guard let realm = try? Realm() else {
             return
         }
         
         try! realm.write {
-            entity.modifiedAt = Date()
-            realm.add(entity, update: .all)
+            realm.add(entity, update: .modified)
+            realm.create(T.self, value: ["id": entity.id,
+                                         "modifiedAt": Date()], update: .modified)
         }
     }
 

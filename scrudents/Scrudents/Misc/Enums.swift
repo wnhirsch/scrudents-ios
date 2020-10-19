@@ -11,6 +11,7 @@ import Foundation
     
     typealias RawValue = Int
     
+    case none
     case first
     case second
     case third
@@ -23,6 +24,8 @@ import Foundation
     
     var rawValue: Int {
         switch self {
+            case .none:
+                return 0
             case .first:
                 return 1
             case .second:
@@ -46,6 +49,8 @@ import Foundation
     
     var description: String {
         switch self {
+            case .none:
+                return "grade.none".localized
             case .first:
                 return "grade.first".localized
             case .second:
@@ -69,6 +74,8 @@ import Foundation
     
     init(rawValue: RawValue) {
         switch rawValue {
+            case 0:
+                self = .none
             case 1:
                 self = .first
             case 2:
@@ -94,6 +101,8 @@ import Foundation
     
     init(description: String) {
         switch description {
+            case "grade.none".localized:
+                self = .none
             case "grade.first".localized:
                 self = .first
             case "grade.second".localized:
@@ -114,6 +123,91 @@ import Foundation
                 self = .ninth
             default:
                 self = .first
+        }
+    }
+    
+}
+
+@objc enum SearchTopic: Int, RawRepresentable, CustomStringConvertible, CaseIterable {
+    
+    typealias RawValue = Int
+    
+    case studentName
+    case addressStreet
+    case addressDistrict
+    case addressCity
+    case addressState
+    case motherName
+    
+    var rawValue: Int {
+        switch self {
+            case .studentName:
+                return 0
+            case .addressStreet:
+                return 1
+            case .addressDistrict:
+                return 2
+            case .addressCity:
+                return 3
+            case .addressState:
+                return 4
+            case .motherName:
+                return 5
+        }
+    }
+    
+    var description: String {
+        switch self {
+            case .studentName:
+                return "filter.student.name".localized
+            case .addressStreet:
+                return "filter.address.street".localized
+            case .addressDistrict:
+                return "filter.address.district".localized
+            case .addressCity:
+                return "filter.address.city".localized
+            case .addressState:
+                return "filter.address.state".localized
+            case .motherName:
+                return "filter.mother.name".localized
+        }
+    }
+    
+    init(rawValue: RawValue) {
+        switch rawValue {
+            case 0:
+                self = .studentName
+            case 1:
+                self = .addressStreet
+            case 2:
+                self = .addressDistrict
+            case 3:
+                self = .addressCity
+            case 4:
+                self = .addressState
+            case 5:
+                self = .motherName
+            default:
+                self = .studentName
+        }
+    }
+    
+    init(description: String) {
+        switch description {
+            case "filter.student.name".localized:
+                self = .studentName
+            case "filter.address.street".localized:
+                self = .addressStreet
+            case "filter.address.district".localized:
+                self = .addressDistrict
+            case "filter.address.city".localized:
+                self = .addressCity
+            case "filter.address.state".localized:
+                self = .addressState
+            case "filter.mother.name".localized:
+                self = .motherName
+            default:
+                self = .studentName
         }
     }
     
